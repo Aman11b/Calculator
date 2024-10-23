@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Laila:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Calculator/style.css">
+    <audio id="click-sound" src="../Calculator/resources/click.mp3" preload="auto"></audio>
+
     <title>Calculator</title>
 </head>
 <body>       
@@ -20,8 +22,11 @@
         <section id="features" class="flex-item">
             <h2>Additional Features</h2>
             <p>This calculator supports multiple themes and sound effects.</p>
+
             <div class="theme-switcher">
-                <button id="toggle-sound" class="btn-sound">Toggle Sound</button><br>
+
+                <button id="toggle-sound" class="btn-sound">Toggle Sound</button>
+
                 <label for="theme-select">Choose Theme:</label>
                 <select id="theme-select">
                     <option value="default">Default</option>
@@ -40,6 +45,7 @@
             <div class="calculator-container">
                 <div class="ob">
                     <div class="light" id="indicator-light"></div>
+
                     <button id="on-off-icon" class="btn-onoff">
                         <img src='../Calculator/resources/btnc.png' alt='On/Off'>
                     </button>

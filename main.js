@@ -7,7 +7,17 @@ const display=document.getElementById('display');
 // console.log(button);
 button.forEach(button=>{
     button.addEventListener('click',()=>{
+        
+        if(!isCalculatorOn){
+            return;
+        }
         const value=button.value;
+
+
+        if(isSoundOn){
+            clickSound.currentTime=0;
+            clickSound.play();
+        }
 
         //if = is clicked perform calculation
         if(value==='='){
@@ -98,3 +108,29 @@ function simpleCalculation(expression){
     return finalResult;
 }
 
+//SOUND
+const clickSound=document.getElementById('click-sound');
+let isSoundOn=false;
+
+const soundToggleButton=document.getElementById('toggle-sound');
+soundToggleButton.addEventListener('click',()=>{
+    isSoundOn=!isSoundOn;
+    soundToggleButton.textContent=isSoundOn?'Sound: ON':'Sound: OFF';
+})
+
+//ON/OFF
+let isCalculatorOn=true;
+const indicatorLight=document.getElementById('indicator-light');
+const onOffButton=document.getElementById('on-off-icon');
+
+onOffButton.addEventListener('click',()=>{
+    isCalculatorOn=!isCalculatorOn;
+
+    if(isCalculatorOn){
+        indicatorLight.style.backgroundColor='yellow';
+        display.textContent='';
+    }else{
+        indicatorLight.style.backgroundColor='red';
+        display.textContent='';
+    }
+});

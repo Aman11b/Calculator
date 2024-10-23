@@ -92,7 +92,7 @@ footer{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: yellow;
+    background-color:yellow;
 }
 .btn-onoff {
     position: relative;
@@ -194,5 +194,4 @@ h1, h2 {
 .btn-sound:active {
     transform: scale(0.95); /* Slightly shrink on click */
 }
-
 
