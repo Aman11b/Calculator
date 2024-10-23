@@ -31,7 +31,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #293462;
+    background-color: #C23373;
     border-radius: 15px;
     height: 550px;
     width: 400px;
@@ -48,17 +48,22 @@ footer{
     border-radius: 10px;
     margin-bottom: 15px;
     margin-top: 20px;
+
+    overflow: hidden;
 }
 /* button grid  */
 .button-grid{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: center; 
     gap: 10px;
     
 }
+.ob{
+    display: flex;
+}
 .button-grid button{
-    flex: 0 0 calc(25% - 10px); /* Set each button to take 25% of the width of the container, minus gap */
+    flex: 0 0 calc(20% - 10px); /* Set each button to take 20% of the width of the container, minus gap */
     height: 40px;            /* Fixed height for each button */
     font-size: 1.2em;           /* Font size */
     cursor: pointer;            /* Change cursor on hover */
@@ -82,9 +87,6 @@ footer{
     margin-top: 23px;
     font-size: 1.2em;
     margin-bottom: 23px;
-}
-.ob{
-    display: flex;
 }
 #indicator-light {
     width: 25px;
