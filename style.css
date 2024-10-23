@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Laila", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #C06C84;
+    transition: background-color 0.5s ease-in-out;
+}
+header{
+    text-align: center;
+    font-size: 30px;
+}
+footer{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.flex-container{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+}
+.calculator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #293462;
+    border-radius: 15px;
+    height: 550px;
+    width: 400px;
+    padding: 20px;
+}
+.display{
+    background: black;
+    color: white;
+    width: 360px;
+    height: 60px;
+    text-align: right;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+/* button grid  */
+.button-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    gap: 10px;
+    
+}
+.button-grid button{
+    flex: 0 0 calc(25% - 10px); /* Set each button to take 25% of the width of the container, minus gap */
+    height: 40px;            /* Fixed height for each button */
+    font-size: 1.2em;           /* Font size */
+    cursor: pointer;            /* Change cursor on hover */
+    background-color: #E493B3;     /* Background color */
+    border: none;               /* No border */
+    border-radius: 10px;        /* Rounded corners */
+    transition: all 0.2s ease-in-out; /* Transition for hover effects */
+    margin: 5px;          
+    /* ptional: margin around buttons */
+    color: white;
+}
+.button-grid button:hover {
+    background-color: #B51B75;      /* Change background color on hover */
+    transform: scale(1.09);
+}
+.button-grid button:active {
+    transform: scale(0.90); /* Slightly shrink on click */
+}
+/* Theme Switcher */
+.theme-switcher {
+    margin-top: 23px;
+    font-size: 1.2em;
+    margin-bottom: 23px;
+}
+.ob{
+    display: flex;
+}
+#indicator-light {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+.btn-onoff {
+    position: relative;
+    left: 310px;
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor on hover */
+    background-color: transparent; /* Removes any background */
+    border: none; /* Removes default button border */
+    overflow: hidden; /* Ensures that any overflow is hidden */
+    border-radius: 50%; /* Makes the button circular */
+}
+
+.btn-onoff img {
+    width: 100%; /* Ensures the image covers the button */
+    height: 100%; /* Ensures the image covers the button */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the button */
+}
+header, footer {
+    text-align: center;
+    z-index: 10;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: black;
+}
+.theme-switcher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC6C6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.theme-switcher label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.theme-switcher select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 9px;
+    border: 1px solid #ccc;
+    background-color: #FFEBD4;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.theme-switcher select:hover {
+    border-color: #F7C566;
+    border-color: #F7C566;
+
+}
+.theme-switcher option {
+    background-color: #FFEBD4;  /* Background color for the options */
+    color: #333;                /* Text color for the options */
+}
+
+/* Optional: style the hover of the options if desired */
+.theme-switcher option:hover {
+    background-color: #F7C566;  /* Background color when hovering over an option */
+}
+
+.theme-switcher select:focus {
+    outline: none;
+    border-color: #F7C566;
+    background-color:#FFEBD4 ;
+}
+.btn-sound {
+    background-color: #E493B3; /* Blue color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 7px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for size */
+    font-size: 1em; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.btn-sound:hover {
+    background-color: #B51B75; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly grow the button */
+}
+
+.btn-sound:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A feature-rich calculator with a clean design, multiple themes, sound effects, and more.">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Laila:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Calculator/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Interactive Calculator</h1>
+    </header>
+    <main class="flex-container">
+        <section id="features" class="flex-item">
+            <h2>Additional Features</h2>
+            <p>This calculator supports multiple themes and sound effects.</p>
+            <div class="theme-switcher">
+                <button id="toggle-sound" class="btn-sound">Toggle Sound</button><br>
+                <label for="theme-select">Choose Theme:</label>
+                <select id="theme-select">
+                    <option value="default">Default</option>
+                    <option value="Theme-1">Dark Mode</option>
+                    <option value="Theme-2">Light Green</option>
+                    <option value="Theme-3">Night Sky</option>
+                    <option value="Theme-4">Sunset Sky</option>
+                    <option value="Theme-5">Winters</option>
+                </select>
+            </div>
+        </section>
+
+
+
+        <section id="calculator" class="flex-item">
+            <div class="calculator-container">
+                <div class="ob">
+                    <div class="light" id="indicator-light"></div>
+                    <button id="on-off-icon" class="btn-onoff">
+                        <img src='../Calculator/resources/btnc.png' alt='On/Off'>
+                    </button>
+
+                </div>
+                
+                <div id="display" class="display">0</div>
+                
+                <div class="button-grid">
+                    <button value="1">1</button>
+                    <button value="2">2</button>
+                    <button value="3">3</button>
+                    <button value="+" class="operator">+</button>
+                    <button value="4">4</button>
+                    <button value="5">5</button>
+                    <button value="6">6</button>
+                    <button value="-" class="operator">-</button>
+                    <button value="7">7</button>
+                    <button value="8">8</button>
+                    <button value="9">9</button>
+                    <button value="*" class="operator">*</button>
+                    <button value="0">0</button>
+                    <button value="." class="decimal">.</button>
+                    <button value="/" class="operator">/</button>
+                    <button class="clear">C</button>
+                    <button value="=" class="equal">=</button>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+    <footer>
+        <p>&copy;2024 Interactive Calculator Project. All Rights Reserved.</p>
+    </footer>
+    <script src="../Calculator/main.js"></script>
+</body>
+</html>
