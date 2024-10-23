@@ -1,18 +1,5 @@
 # 🧮 Interactive Calculator
 
-## 📚 Table of Contents
-- [Overview](#overview)
-- [✨ Features](#features)
-- [🛠️ Technologies Used](#technologies-used)
-- [🚀 Installation](#installation)
-- [🖥️ Usage](#usage)
-- [⚙️ How It Works](#how-it-works)
-- [🌐 Demo](#demo)
-- [🤝 Contributing](#contributing)
-- [📄 License](#license)
-
----
-
 ## Overview
 Welcome to the **Interactive Calculator**! This project is a feature-rich web application designed to perform basic arithmetic calculations with a **user-friendly interface**. Dive into HTML, CSS, and JavaScript while exploring essential programming concepts.
 
