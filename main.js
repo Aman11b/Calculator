@@ -134,3 +134,24 @@ onOffButton.addEventListener('click',()=>{
         display.textContent='';
     }
 });
+
+//THEME CHANGE
+const themeSelect=document.getElementById('theme-select');
+
+themeSelect.addEventListener('change',function(){
+    const selectedTheme=themeSelect.value;
+
+    if(selectedTheme==='default'){
+        document.body.className='default-theme';
+    }else if(selectedTheme==='Theme-1'){
+        document.body.className='dark-theme';
+    }else if (selectedTheme === 'Theme-2') {
+        document.body.className = 'light-green-theme'; // Set light green theme
+    } else if (selectedTheme === 'Theme-3') {
+        document.body.className = 'night-sky-theme'; // Set night sky theme
+    } else if (selectedTheme === 'Theme-4') {
+        document.body.className = 'sunset-sky-theme'; // Set sunset sky theme
+    } else if (selectedTheme === 'Theme-5') {
+        document.body.className = 'winters-theme'; // Set winters theme
+    }
+})

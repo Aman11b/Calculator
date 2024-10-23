@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     height: 100vh;
     background-color: #C06C84;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.7s  ease-in;
 }
 header{
     text-align: center;
@@ -31,7 +31,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #C23373;
+    background-color: #FFC6C6;
     border-radius: 15px;
     height: 550px;
     width: 400px;
@@ -87,6 +87,8 @@ footer{
     margin-top: 23px;
     font-size: 1.2em;
     margin-bottom: 23px;
+    height: 200px;
+    width: 350px;
 }
 #indicator-light {
     width: 25px;
@@ -119,7 +121,6 @@ header, footer {
 
 h1, h2 {
     margin-bottom: 20px;
-    color: black;
 }
 .theme-switcher {
     display: flex;
@@ -184,6 +185,7 @@ h1, h2 {
     font-size: 1em; /* Font size */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    margin: 10px;
 }
 
 .btn-sound:hover {
@@ -193,5 +195,154 @@ h1, h2 {
 
 .btn-sound:active {
     transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* Default Theme */
+body.default-theme {
+    background-color: #C06C84;
+}
+
+body.default-theme .button-grid button {
+    background-color: #E493B3;
+    color: white;
+}
+
+body.default-theme .button-grid button:hover {
+    background-color: #B51B75;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #6EACDA;
+    color:#021526;
+}
+body.dark-theme .calculator-container {
+    background-color: #021526;
+    color: #021526;
+}
+body.dark-theme header{
+    color: #021526;
+}
+body.dark-theme .theme-switcher{
+    background-color: #021526;
+    color:#021526;
+}
+body.dark-theme label{
+    color: white;
+}
+body.dark-theme .btn-sound{
+    background-color: #E2DFD0;
+    color:#021526;
+}
+body.dark-theme .button-grid button {
+    background-color: #E2DFD0;
+    color: #021526;
+}
+body.dark-theme .button-grid .btn-sound button:hover {
+    background-color: #333333;
+}
+/* Light Green Theme */
+body.light-green-theme {
+    background-color: #9CDBA6;
+    color: #16423C;
+}
+body.light-green-theme .calculator-container {
+    background-color: #6A9C89;
+}
+body.light-green-theme header{
+    color: #16423C;
+}
+body.light-green-theme .theme-switcher{
+    background-color: #6A9C89;
+}
+body.light-green-theme .btn-sound{
+    background-color: #E9EFEC;
+    color: #16423C;
+}
+body.light-green-theme .button-grid button {
+    background-color: #E9EFEC;
+    color: #16423C;
+}
+body.light-green-theme .button-grid .btn-sound button:hover {
+    background-color: #333333;
+}
+
+/* night-sky-theme */
+body.night-sky-theme {
+    background-color: #070F2B;
+    color: #9290C3;
+}
+body.night-sky-theme .calculator-container {
+    background-color: #910A67;
+}
+body.night-sky-theme header{
+    color: #9290C3;
+}
+body.night-sky-theme .theme-switcher{
+    background-color: #910A67;
+}
+body.night-sky-theme .btn-sound{
+    background-color: #070F2B;
+    color: #9290C3;
+}
+body.night-sky-theme .button-grid button {
+    background-color: #070F2B;
+    color: #9290C3;
+}
+body.night-sky-theme .button-grid .btn-sound button:hover {
+    background-color: #333333;
+}
+/* sunset-sky-theme */
+
+body.sunset-sky-theme {
+    background-color: #FFB200;
+    color: #E4003A;
+}
+body.sunset-sky-theme .calculator-container {
+    background-color: #EB5B00;
+}
+body.sunset-sky-theme header{
+    color: #E4003A;
+}
+body.sunset-sky-theme .theme-switcher{
+    background-color: #EB5B00;
+}
+body.sunset-sky-theme .btn-sound{
+    background-color: #FFF78A;
+    color: #E4003A;
+}
+body.sunset-sky-theme .button-grid button {
+    background-color: #FFF78A;
+    color: #E4003A;
+}
+body.sunset-sky-theme .button-grid .btn-sound button:hover {
+    background-color: #333333;
+}
+
+/* winters-theme */
+
+body.winters-theme {
+    background-color: #EEEEEE;
+    color: #201E43;
+}
+body.winters-theme .calculator-container {
+    background-color: #508C9B;
+}
+body.winters-theme header{
+    color: #201E43;
+}
+body.winters-theme .theme-switcher{
+    background-color: #508C9B;
+}
+body.winters-theme .btn-sound{
+    background-color: #201E43;
+    color: #EEEEEE;
+}
+body.winters-theme .button-grid button {
+    background-color: #201E43;
+    color: #EEEEEE;
+}
+body.winters-theme .button-grid .btn-sound button:hover {
+    background-color: #333333;
 }
 
